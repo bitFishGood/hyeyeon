@@ -1,6 +1,4 @@
-/* src/components/Signup.css */
-
-/* 전역 기본 설정 (전역 CSS가 없다면 추가) */
+/* 전역 설정 */
 *,
 *::before,
 *::after {
@@ -9,81 +7,69 @@
   padding: 0;
 }
 
-/* 화면 전체를 차지하는 배경 */
+/* 화면 전체를 채우는 배경 */
 .signup-page {
   width: 100vw;
   height: 100vh;
-  background: #eee; /* 필요에 따라 배경색 또는 배경이미지 적용 */
+  background: #ade0f2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* 전체 화면을 꽉 채우도록 하는 카드 컨테이너 */
-/* 최대 너비/높이를 지정하여 너무 과도하게 확장되지 않도록 하고,
-   필요하다면 내부 스크롤을 허용합니다. */
+/* 진짜 꽉 찬 카드 (이제 카드가 아니라 전체 화면 느낌) */
 .signup-card {
   width: 100%;
   height: 100%;
-  max-width: 600px;       /* 예시: 브라우저가 너무 넓은 경우 최대 너비 제한 */
-  max-height: 800px;      /* 예시: 너무 큰 화면 대응을 위한 최대 높이 제한 */
-  background: rgba(173, 216, 230, 0.8); /* 하늘색+투명도 */
-  border-radius: 20px;    /* 전체 화면 꽉 찬 디자인이면 0도 괜찮습니다 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  overflow-y: auto;       /* 내용이 많을 경우 스크롤 허용 */
-
-  /* 중앙 정렬 */
+  background: #ade0f2;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
-/* form 레이아웃 */
+/* 폼 전체 */
 .signup-form {
   width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: stretch;  /* form 요소들이 카드의 전체 폭을 사용하도록 */
-  margin-top: 10px;
+  align-items: stretch;
 }
 
-/* label + input 세트 */
+/* 라벨 + 입력 */
 .form-row {
-  margin: 8px 0;
-  width: 100%;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
 }
-
-/* label */
 .form-row label {
-  margin-bottom: 4px;
-  font-size: 14px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
   color: #333;
 }
-
-/* input */
 .form-row input {
-  padding: 8px;
+  padding: 12px;
   border: none;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   outline: none;
 }
 
-/* 회원가입 버튼 */
+/* 버튼 */
 .btn-confirm {
   background: #62b6e2;
   color: #fff;
   border: none;
-  border-radius: 20px;
-  padding: 12px;
-  font-size: 16px;
-  margin-top: 15px;
+  border-radius: 30px;
+  padding: 14px;
+  font-size: 1rem;
+  margin-top: 20px;
   cursor: pointer;
-  width: 100%;
+  transition: background 0.2s ease-in-out;
 }
 .btn-confirm:hover {
   background: #4aa0cf;
@@ -91,7 +77,19 @@
 
 /* 로그인 링크 */
 .login-link {
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 20px;
+  font-size: 0.95rem;
   color: #333;
+  text-align: center;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .signup-card {
+    padding: 20px;
+  }
+
+  .btn-confirm {
+    font-size: 0.95rem;
+  }
 }
