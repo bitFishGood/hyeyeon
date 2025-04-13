@@ -1,0 +1,35 @@
+/* SettingsModal.css */
+
+.option-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* 아이콘 블록 사이 간격 */
+  margin: 15px 0;
+}
+
+/* 각 아이콘 블록 */
+.option-block {
+  display: flex;
+  flex-direction: column; /* 아이콘 위, on/off 아래 */
+  align-items: center;
+  padding: 0 20px; /* 좌우 여백 */
+  position: relative;
+}
+
+/* 첫 번째 블록만 오른쪽 선 표시하기 위해 :not(:last-child) */
+.option-block:not(:last-child) {
+  border-right: 1px solid #777; /* 세로 구분선 색상 */
+}
+
+/* 아이콘 스타일 */
+.option-icon {
+  font-size: 36px; /* 아이콘 크기 */
+  margin-bottom: 5px; /* 아이콘과 on/off 간격 */
+}
+
+/* on/off 텍스트 */
+.option-text {
+  font-size: 14px;
+  color: #333;
+}

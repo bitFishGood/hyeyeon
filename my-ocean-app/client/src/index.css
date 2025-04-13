@@ -1,0 +1,54 @@
+/* BitFish 웰컴페이지 전체: 화면 전체를 채움 */
+.bitfish-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 중앙 웰컴 카드 영역 */
+.bitfish-container {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 타이틀 스타일 */
+.bitfish-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 서브 타이틀 스타일 */
+.bitfish-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* 시작하기 버튼 스타일 */
+.bitfish-start-btn {
+  width: 100%;
+  padding: 12px;
+  background: #62b6e2;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.bitfish-start-btn:hover {
+  background: #4aa0cf;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

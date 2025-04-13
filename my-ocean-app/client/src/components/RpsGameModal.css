@@ -1,0 +1,74 @@
+.rps-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+}
+
+.rps-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.rps-choice-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.rps-choice {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rps-choice img {
+  width: 64px;
+  height: 64px;
+}
+
+.rps-result h2 {
+  color: #6b21a8;
+  margin-top: 16px;
+}
+
+.rps-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.rps-buttons button,
+.rps-result button {
+  padding: 8px 16px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.rps-close {
+  margin-top: 20px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  text-decoration: underline;
+}
