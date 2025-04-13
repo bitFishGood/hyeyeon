@@ -5,3 +5,5 @@ git add .
 git commit -m "Fix: ignore node_modules and prevent segfault"
 git push origin main
 
+node_modules/
+**/node_modules/
